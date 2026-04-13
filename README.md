@@ -1,0 +1,2 @@
+# aminokaa
+Talant agai krutoi
