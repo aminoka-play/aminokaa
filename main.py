@@ -31,8 +31,14 @@ while True:
         print("Такого слова в строке нет.")
 
     print()
-    again = input("Хотите выполнить ещё одну замену? (да/нет): ")
+    while True:
+        again = input("Хотите выполнить ещё одну замену? (да/нет): ")
 
-    if again.lower() != "да":
-        print("Программа завершена.")
-        break
+        if again.lower() == "да":
+            break
+
+        elif again.lower() == "нет":
+            print("Программа завершена.")
+            exit()  
+        else:
+            print("Пожалуйста, введите только 'да' или 'нет'.")
