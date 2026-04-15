@@ -1,10 +1,13 @@
 print("~~~ ЗАМЕНА СЛОВ В СТРОКЕ ~~~")
 
-text = input("Введите текст: ")
+while True:
+    print()
+    text = input("Введите текст: ")
 
-if text.strip() == "":
-    print("Ошибка: строка пустая. Попробуйте снова.")
-else:
+    if text.strip() == "":
+        print("Ошибка: строка пустая.")
+        continue
+
     old_word = input("Какое слово заменить: ")
     new_word = input("На что заменить: ")
 
@@ -26,3 +29,10 @@ else:
     else:
         print()
         print("Такого слова в строке нет.")
+
+    print()
+    again = input("Хотите выполнить ещё одну замену? (да/нет): ")
+
+    if again.lower() != "да":
+        print("Программа завершена.")
+        break
