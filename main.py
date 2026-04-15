@@ -25,4 +25,4 @@ else:
         print(result)
     else:
         print()
-        print("Такого слова в тексте нет.")
+        print("Такого слова в строке нет.")
